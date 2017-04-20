@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: ACM-Reference-Format.bst
+I found no \citation commands---while reading file main.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: acmsmall-sample-bibfile.bib
+Database file #2: websci-2017.bib
+I was expecting a `{' or a `('---line 134 of file websci-2017.bib
+ : Aditi Gupta, Ponnurangam Kumaraguru Indraprastha Institute of Information Technology, Delhi, India {aditig, pk}@iiitd.ac.in 
+ :                                                                                                                             precog.iiitd.edu.in
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 0 entries,
+            5551 wiz_defined-function locations,
+            1286 strings with 15141 characters,
+and the built_in function-call counts, 95 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 8
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 1
+empty$ -- 1
+format.name$ -- 0
+if$ -- 2
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 40
+num.names$ -- 0
+pop$ -- 1
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 39
+(There were 2 error messages)
