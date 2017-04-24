@@ -21,6 +21,7 @@ print len(annotations['rev_id'].unique())
 # merge everything, select only old workers
 demog_annotations = pd.merge(annotations, demog, on='worker_id')
 demog_comments_annotations = pd.merge(comments, demog_annotations, on='rev_id')
+#re write this so we can get more than one age category at a time - add new column with 'young' or 'old ' depending on bracket
 old_only = demog_comments_annotations[demog_comments_annotations.age_group == '45-60']
 
 # remove unwanted columns
