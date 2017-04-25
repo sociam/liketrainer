@@ -1,3 +1,5 @@
 /datasets
 ibcData.pkl
 venv
+nltk_data
+*.pyc
