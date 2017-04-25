@@ -19,6 +19,7 @@ def process_fid(fid, by_demo):
 	# print 'month ', mon, ' day ', day, ' demo ', demo, ' posts ', posts
 	by_demo[demo] = (by_demo.get(demo) or []) + nps_chat.posts(fid)[:]
 
+# loads the corpus into a dict by demographic { demo1: [msg1, msg2] }
 def load_by_demo():
 	by_demo = {}
 	[process_fid(fid, by_demo) for fid in nps_chat.fileids()]
@@ -30,9 +31,15 @@ addpath('/Users/electronic/Desktop/liketrainer/nltk_data')
 corpus_by_demographic = load_by_demo()
 # print make_clf.clf.predict(['happy world. nice words. very great.'])
 
+
+joinup = lambda p: ' '.join(p)
+predict = lambda s: make_clf.clf.predict([s])[0]
+
+# iterates through all demographics in the corpus and applies classifier true/false
+# for demographic, msgs in corpus_by_demographic.items():
+# 	freqs[demographic] = dict(Counter([make_clf.clf.predict([' '.join(x)])[0] for x in msgs]))
+
 freqs = {}
-
 for demographic, msgs in corpus_by_demographic.items():
-	freqs[demographic] = dict(Counter([make_clf.clf.predict([' '.join(x)])[0] for x in msgs]))
-
+	freqs[demographic] = dict(Counter([predict(joinup(x)) for x in msgs]))
 print freqs
