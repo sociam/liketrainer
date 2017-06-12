@@ -180,7 +180,7 @@ discussion platforms
 
 \section{Introduction}
 
-Online platforms are the `curators of public discourse'~\cite{gillespie2010politics}, and the digital extension of the public sphere~\cite{dahlberg2001internet}. Social media, news websites, and question / answer forums provide significant opportunities allow their users to express views and engage in deliberation with a diverse range of peers ~\cite{halpern2013social}. However, aggressive, offensive or bullying comments can stifle debate and drive people away from participating in such discussions. Left unchecked, they may also lead to calls for intervention by regulators or law enforcement authorities. As a result, many platforms have terms of use and content policies to define the bounds of acceptable discourse, and employ active measures to enforce them ~\cite{ksiazek2015civil}.
+Online platforms are increasingly the place where we express our opinions and engage in debate. They have been called the new `curators of public discourse'~\cite{gillespie2010politics}, and the digital extension of the public sphere~\cite{dahlberg2001internet}. Social media, news websites, and question / answer forums provide significant opportunities allow their users to express views and engage in deliberation with a diverse range of peers ~\cite{halpern2013social}. However, aggressive, offensive or bullying comments can stifle debate and drive people away from participating in such discussions. Left unchecked, they may also lead to calls for intervention by regulators or law enforcement authorities. As a result, many platforms have terms of use and content policies to define the bounds of acceptable discourse, and employ active measures to enforce them ~\cite{ksiazek2015civil}.
  
 Defining company policies and the standards and norms that underpin them might be within the remit of company executives, or undertaken in consultation with users and other stakeholders. Platforms with large volumes of video, like Facebook and Youtube have teams dedicated to identifying and removing offensive content. Many platforms also rely on users flagging content, both as a means of detection and as a 'rhetorical justification' for censorship ~\cite{crawford2016flag}. In some cases, moderation privileges are granted to particular volunteers, who may be self-appointed (e.g. Reddit), appointed through semi-democratic processes (e.g Wikipedia), or implicitly through reputation developed on a platform (e.g. StackExchange). Community norms defining acceptability are rarely static, consistent or uncontested. The discussion forum Reddit features many sub-fora in which different norms hold, leading to frequent arguments between users, staff and executives across sub-fora over what kinds of posts should be allowed ~\cite{centivany2016values}. What counts as acceptable is therefore always a subjective matter, particular to a platform and even to particular sub-groups within it.
 
@@ -228,59 +228,26 @@ mostly concerned with fairness in terms of non-discrimination. race, gender. as 
 
 What kinds of bias might apply in this case?
 
-What some people think is 'abuse' is just partisan disagreement. in a study of news platform comment section moderation, Diakopoulos and Naaman found that media organisations acknowledge that their moderators may bring their own biases to the evaluation of standards~\cite{diakopoulos2011towards}. sometimes users flag comments as abusive when other users might judge them as OK; the differences may be due to political partisan divides. As one moderator said; "what one person thinks racially prejudiced, another may think is a criticism of culture. That’s usually the toughest question".
+What some people think is 'abuse' is just partisan disagreement. in a study of news platform comment section moderation, Diakopoulos and Naaman found that media organisations acknowledge that their moderators may bring their own biases to the evaluation of standards~\cite{diakopoulos2011towards}. Sometimes users flag comments as abusive when other users might judge them as OK; the differences may be due to political partisan divides. As one moderator said; "what one person thinks racially prejudiced, another may think is a criticism of culture. That’s usually the toughest question".
 
-An important difference between this case and the typical contexts that have previously been studied in DADM is that the bias is not against particular demographic groups per se (e.g. gender, race, age), but but rather against particular definitions of offense. 
+An important difference between this case and the typical contexts that have previously been studied in DADM is that the bias is not against particular demographic groups per se (e.g. gender, race, age), but but rather against particular definitions of offense. However, it is also likely that individuals within certain demographic groups are likely to share definitions of offense, at least to some extent. For example, various studies report gender differences regarding offensive language ~\cite{johnson1985sex,sutton2001bitches,jay1992cursing}. Therefore, in talking about bias in offense classification, we are not talking about bias directly affecting individuals from a certain protected group (for instance, disportionate numbers of women being denied loans). Rather, we are talking about bias towards or against definitions of offense which are more strongly associated with one group over another. For instance, a classifier might more often classify comments as 'offensive' according to definitions of offense that are more prevalent amongst men, than alternative definitions that are more prevalent amonst women. If certain populations have particular definitions of offense, and an automated system more often classifies comments in accordance with one such definition rather than another, we might say that the system is unfair to those who favour the other definition.
 
-the 'positive outcome' for e.g. adherents of one definition of offense would be for comments to be classified as offensive in so far as that group regards the comment as offensive.
-
-There may not be neatly divided groups of people according to their definition of offense. however, different demographic groups do exhibit some differences in offense. Johnson and fine 1985.  rumenik, capasso,hendrik. summarised in 'timothy jay cursing in america'.
-
-Although, it is likely that different demographic sub-groups will differ in their definition of offense.
-
-If certain populations have particular definitions of offense, and an automated system more often classifies comments in accordance with one such definition rather than another, we might say that the system is unfair to those who favour the other definition.
-
-
-
-
-
-
-
-furthermore, environments are self-sustaining, self-reinforced by prior norms. but they are also malleable. they can be changed:
-news organization can affect the deliberative behavior of commenters ~\cite{stroud2015changing}
-the kinds of comments a user sees determines what kinds of comments they post (e.g. thoughtful or thoughtless) ~\cite{sukumaran2011normative}
-nasty comments lead to negative perceptions of the content they comment on ~\cite{anderson2014nasty}
-
-and so there is a choice.
+Furthermore, conversational environments have norms of acceptability which do not exist in a vacuum - they are reinforced by prior norms, but also malleable. Previous research on online comments has found that by intervening in certain ways, news organizations can affect the deliberative behavior of commenters~\cite{stroud2015changing}. By altering the kinds of comments a user, they can determine what kinds of comments they post (e.g. thoughtful or thoughtless) ~\cite{sukumaran2011normative}. Finally, nasty comments can lead to negative perceptions of the content they comment on ~\cite{anderson2014nasty}.
 
 
 \section{Key questions and hypotheses}
 
-one way to do this would be to test whether these systems have disparate effects on certain populations. do certain ethnicities, genders, ages, get censored more often than others?
+% one way to do this would be to test whether these systems have disparate effects on certain populations. do certain ethnicities, genders, ages, get censored more often than others?
 
-however, this is tricky. it is feasible to detect disparate impact, but this doesn't tell us whether disparities are unfair. we want to know if some such populations just are 'more offensive', or if they are in some sense disproportionately misclassified. for that we need some notion of false positive and false negative rates. we need some 'ground truth'.
+% however, this is tricky. it is feasible to detect disparate impact, but this doesn't tell us whether disparities are unfair. we want to know if some such populations just are 'more offensive', or if they are in some sense disproportionately misclassified. for that we need some notion of false positive and false negative rates. we need some 'ground truth'.
 
-Our general question is: how do latent norms and biases in training data affect the operation of abuse detection systems?
+Our general question is: how do latent norms and biases in training data affect the operation of offense detection systems? In order to measure this empirically, we need to define what we mean by bias and fairness. What would it mean for an offence classifier to be fair / unfair?
 
-What would it mean for an offence classifier to be fair / unfair?
+The usual way to evaluate a classifier is to define a loss function, which measures the extent to which its predictions are the same as the ground truth of the phenomena of interest. Normally, we are only interested in one version of the ground truth. In this case, we want to measure biases between classifiers relative to different definitions of offense; i.e. multiple 'ground truths'. To this end, we define the following terms.
 
-The usual way to evaluate a classifier is to measure the extent to which it classifies in accordance with the ground truth of the phenomena of interest. Eg is it a cat or dog. In such cases, the ground truth can be established by scientific fact. However in the case of offence, we only have human labels. These humans have subjective and idiosyncratic judgements.
+For any corpus of comments C in natural language [c1, c2, ... cn], and for any definition of offence D, there is some distribution of offense labels L (0 = 'not offensive', 1 ='offensive'), over C, that are a function of D. For example, definition D might have a distribution of labels L over corpus C, D(L,C) = {L(c1) : 0, L(c2) : 1, ... L(cN) : 0}.
 
-So we might say 'does the majority think it's offensive'?. But this could also
-
--
-
-For any corpus of comments C in natural language [c1, c2, ... cn],
-
-And for any definition of offence D,
-
-The is some distribution of offense labels L (0 = 'not offensive', 1 ='offensive'), over C, that are a function of D.
-
-For example, definition D might have a distribution of labels L over corpus C, D(L,C) = {L(c1) : 0, L(c2) : 1, ... L(cN) : 0}
-
-A classifier CL is biased​ against definition D1 and in favour of definition D2, with regards to corpus C, to the extent that CL's offense labels CL(L,C) are 'closer' to D1(L,C) than they are to D2(L,C). That is, we define two loss functions
-
-There are various different ways to measure how 'close' two distributions of offence labels are. One would be to compare the sum of all differences between the distributions. Other approach would be to compare only false positives or only false negatives, or only true positives / negatives.
+A classifier CL is biased​ against definition D1 and in favour of definition D2, with regards to corpus C, to the extent that CL's offense labels CL(L,C) are 'closer' to D1(L,C) than they are to D2(L,C). That is, we define compare two different loss functions, corresponding to D1 and D2, to determine if CL is biased towards D1 or D2. There are various different ways to measure loss functions, and therefore how 'close' a distribution of offence labels is to a given definition of offense. These are discussed in the results section below.
 
 
 % old hypotheses:

@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  10 JUN 2017 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  12 JUN 2017 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main
+**main.tex
 (./main.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
@@ -922,13 +922,13 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 168.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 184.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 184.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 184.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 184.
  [1
 
 \openout3 = `main.upa'.
@@ -940,112 +940,121 @@ city,
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 191.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 191.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 191.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 191.
+(babel)             in language  on input line 190.
 [2]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 213.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 213.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 213.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 213.
  [3]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 263.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 263.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 263.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 263.
+(babel)             in language  on input line 236.
  [4]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 267.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 267.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 267.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 267.
+ [5]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.280 https://en.wikipedia.org/wiki/Receiver_
+l.284 https://en.wikipedia.org/wiki/Receiver_
                                              operating_characteristic#Area_u...
 
 ? 
 ! You can't use `macro parameter character #' in math mode.
-l.280 ...g/wiki/Receiver_operating_characteristic#
+l.284 ...g/wiki/Receiver_operating_characteristic#
                                                   Area_under_the_curve
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.281 
+l.285 
       
 ? 
 
-Overfull \hbox (166.79991pt too wide) in paragraph at lines 279--281
+Overfull \hbox (166.79991pt too wide) in paragraph at lines 283--285
 []\T1/clm2/m/n/10 (-20) evaluated us-ing the ROC / AUC. https://en.wikipedia.or
 g/wiki/Receiver$[]\OML/lmm/m/it/10 perating[]haracteristicArea[]nder[]he[]urve$
  
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 314.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 314.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 314.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 301.
-[5]
+(babel)             in language  on input line 314.
+[6]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 354.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 354.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 354.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 340.
- [6] (./main.bbl
+(babel)             in language  on input line 354.
+ [7] (./main.bbl
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 43.
- [7])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 373.
+(babel)             in language  on input line 61.
+ [8])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 377.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 373.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
+(babel)             in language  on input line 377.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 377.
  (./main.aux
 * soulpos - computing points - it may take a few seconds *
 \openout3 = `main.upb'.
 
  (./main.upa))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 373.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 373.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 377.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 377.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2791B1CBA47E701EF814267CCD2A2B75;112.
  ) 
 Here is how much of TeX's memory you used:
- 14915 strings out of 493089
- 247638 string characters out of 6134841
+ 14926 strings out of 493089
+ 247794 string characters out of 6134841
  417562 words of memory out of 5000000
- 17763 multiletter control sequences out of 15000+600000
- 75415 words of font info for 244 fonts, out of 8000000 for 9000
+ 17766 multiletter control sequences out of 15000+600000
+ 75531 words of font info for 247 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 44i,9n,55p,1611b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,9n,55p,1615b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cfr-lm/t1-clm.enc}{/usr/l
 ocal/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texli
 ve/2015/texmf-dist/fonts/enc/dvips/cfr-lm/dotdigits-clm.enc}{/usr/local/texlive
@@ -1059,10 +1068,10 @@ ve/2015/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/public/lm/lmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
 c/lm/lmvtt10.pfb>
-Output written on main.pdf (8 pages, 254009 bytes).
+Output written on main.pdf (9 pages, 258002 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 50 named destinations out of 1000 (max. 500000)
  21533 words of extra memory for PDF output out of 24883 (max. 10000000)
 
