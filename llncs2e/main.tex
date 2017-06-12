@@ -232,7 +232,7 @@ What some people think is 'abuse' is just partisan disagreement. in a study of n
 
 An important difference between this case and the typical contexts that have previously been studied in DADM is that the bias is not against particular demographic groups per se (e.g. gender, race, age), but but rather against particular definitions of offense. However, it is also likely that individuals within certain demographic groups are likely to share definitions of offense, at least to some extent. For example, various studies report gender differences regarding offensive language ~\cite{johnson1985sex,sutton2001bitches,jay1992cursing}. Therefore, in talking about bias in offense classification, we are not talking about bias directly affecting individuals from a certain protected group (for instance, disportionate numbers of women being denied loans). Rather, we are talking about bias towards or against definitions of offense which are more strongly associated with one group over another. For instance, a classifier might more often classify comments as 'offensive' according to definitions of offense that are more prevalent amongst men, than alternative definitions that are more prevalent amonst women. If certain populations have particular definitions of offense, and an automated system more often classifies comments in accordance with one such definition rather than another, we might say that the system is unfair to those who favour the other definition.
 
-Furthermore, conversational environments have norms of acceptability which do not exist in a vacuum - they are reinforced by prior norms, but also malleable. Previous research on online comments has found that by intervening in certain ways, news organizations can affect the deliberative behavior of commenters~\cite{stroud2015changing}. By altering the kinds of comments a user, they can determine what kinds of comments they post (e.g. thoughtful or thoughtless) ~\cite{sukumaran2011normative}. Finally, nasty comments can lead to negative perceptions of the content they comment on ~\cite{anderson2014nasty}.
+Furthermore, conversational environments have norms of acceptability which do not exist in a vacuum - they are reinforced by prior norms, but also malleable. Previous research on online comments has found that by intervening in certain ways, news organizations can affect the deliberative behavior of commenters~\cite{stroud2015changing}. By altering the kinds of comments a user sees, they can determine what kinds of comments they post (e.g. thoughtful or thoughtless) ~\cite{sukumaran2011normative}. Finally, nasty comments can lead to negative perceptions of the content they comment on ~\cite{anderson2014nasty}.
 
 
 \section{Key questions and hypotheses}
@@ -241,13 +241,13 @@ Furthermore, conversational environments have norms of acceptability which do no
 
 % however, this is tricky. it is feasible to detect disparate impact, but this doesn't tell us whether disparities are unfair. we want to know if some such populations just are 'more offensive', or if they are in some sense disproportionately misclassified. for that we need some notion of false positive and false negative rates. we need some 'ground truth'.
 
-Our general question is: how do latent norms and biases in training data affect the operation of offense detection systems? In order to measure this empirically, we need to define what we mean by bias and fairness. What would it mean for an offence classifier to be fair / unfair?
+Our general question is: how do latent norms and biases in training data affect the operation of offense detection systems? In order to measure this empirically, we need to define what we mean by bias and fairness. What would it mean for an offence classifier to be biased or unfair?
 
 The usual way to evaluate a classifier is to define a loss function, which measures the extent to which its predictions are the same as the ground truth of the phenomena of interest. Normally, we are only interested in one version of the ground truth. In this case, we want to measure biases between classifiers relative to different definitions of offense; i.e. multiple 'ground truths'. To this end, we define the following terms.
 
 For any corpus of comments C in natural language [c1, c2, ... cn], and for any definition of offence D, there is some distribution of offense labels L (0 = 'not offensive', 1 ='offensive'), over C, that are a function of D. For example, definition D might have a distribution of labels L over corpus C, D(L,C) = {L(c1) : 0, L(c2) : 1, ... L(cN) : 0}.
 
-A classifier CL is biased​ against definition D1 and in favour of definition D2, with regards to corpus C, to the extent that CL's offense labels CL(L,C) are 'closer' to D1(L,C) than they are to D2(L,C). That is, we define compare two different loss functions, corresponding to D1 and D2, to determine if CL is biased towards D1 or D2. There are various different ways to measure loss functions, and therefore how 'close' a distribution of offence labels is to a given definition of offense. These are discussed in the results section below.
+A classifier CL is biased​ against definition D1 and in favour of definition D2, with regards to corpus C, to the extent that CL's offense labels CL(L,C) are 'closer' to D1(L,C) than they are to D2(L,C). That is, we compare two different loss functions, corresponding to D1 and D2, to determine if CL is biased towards D1 or D2. There are various different ways to measure loss functions, and therefore how 'close' a distribution of offence labels is to a given definition of offense. These are discussed in the results section below.
 
 
 % old hypotheses:
@@ -338,21 +338,8 @@ so looks like both male and female-trained classifiers have a higher error rate 
 As established in the previous section, the female raters broader divergence in labelling probably explains why the classifiers are generally worse at predicting female labels.
 
 \section{Discussion}
-
-we then discuss the significance of our findings.
-
-the consequences go deep into methodological questions in political philosophy.
-
-maybe the crowd-workers’ notions of toxicity are partisanal?
-but maybe lib / con are just more offensive?
-
 first, can toxicity be separated from partisanship in a way which does not beg the question?
 second, what is the right amount of diversity in a free society?
-How can we get past biases in the training data?
-
-to this end, we re-trained the model using only demographic subsets of the crowd-workers (gender, age, education). These alternative models yielded differential disparate impacts on partisan groups. (to test their significance, we also trained multiple randomly drawn subsets to obtain an expected observation for the null hypothesis).
-
-potential partisan bias mitigation strategies (sub-class of discrimination-aware data mining).
 
 our conclusion is not that automated systems are necessarily a bad idea. but rather that because they are never neutral, there are difficult choices to be made.
 
