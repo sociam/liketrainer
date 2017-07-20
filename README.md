@@ -1,5 +1,7 @@
 # liketrainer
-Code for the 'Like Trainer, Like Bot' study, presented at [SocInfo 2017](socinfo2017.oii.ox.ac.uk)
+Code for the 'Like trainer, like bot? Inheritance of bias in algorithmic content moderation' study, presented at [SocInfo 2017](socinfo2017.oii.ox.ac.uk)
+
+Paper available on [Arxiv](https://arxiv.org/abs/1707.01477)
 
 ## Training data
 
